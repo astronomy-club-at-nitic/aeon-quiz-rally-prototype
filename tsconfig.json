@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  // https://github.com/tsconfig/bases/blob/main/bases/strictest.json
+  // https://github.com/tsconfig/bases/blob/main/bases/next.json
+  "extends": ["@tsconfig/strictest/tsconfig", "@tsconfig/next/tsconfig"],
+  "compilerOptions": {
+    "baseUrl": "./",
+    "exactOptionalPropertyTypes": false,
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "rootDir": "./"
+  },
+  "include": ["./src/**/*", "*.js", "./*.ts", ".next/types/**/*.ts"],
+  "exclude": ["**/node_modules/**/*"]
+}

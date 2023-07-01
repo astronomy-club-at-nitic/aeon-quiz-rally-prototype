@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: aeon-quiz-rally-prototype-app
+    build:
+      context: ../
+      dockerfile: ./docker/Dockerfile.development
+    volumes:
+      - type: bind
+        source: ../
+        target: /workspaces/aeon-quiz-rally-prototype/
+      - type: volume
+        source: node-modules
+        target: /workspaces/aeon-quiz-rally-prototype/node_modules/
+      - type: volume
+        source: pnpm-store
+        target: /workspaces/aeon-quiz-rally-prototype/.pnpm-store/
+    tty: true
+
+volumes:
+  node-modules:
+    driver: local
+  pnpm-store:
+    driver: local

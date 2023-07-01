@@ -1,0 +1,15 @@
+ARG NODE_VERSION=18.16.1
+
+FROM node:${NODE_VERSION}-bullseye
+
+RUN apt-get update \
+  && apt-get --no-install-recommends -y install gnupg2 ca-certificates \
+  && apt-get clean \
+  && rm -rf /var/lib/apt/lists \
+  && yarn global add pnpm
+
+WORKDIR /workspaces/aeon-quiz-rally-prototype/
+
+COPY ./.git /workspaces/aeon-quiz-rally-prototype/.git
+COPY ./package.json ./pnpm-lock.yaml /workspaces/aeon-quiz-rally-prototype/
+RUN pnpm install --frozen-lockfile

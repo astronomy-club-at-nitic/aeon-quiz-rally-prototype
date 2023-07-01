@@ -1,0 +1,4 @@
+.next/
+coverage/
+generated/
+node_modules/
