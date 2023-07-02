@@ -51,7 +51,7 @@ export const QuestionFormSection = ({ question, currentAnswerStatuses }: Questio
     <section className="flex flex-col gap-6">
       <h2 className="text-2xl font-bold">解答の選択肢</h2>
       <form onSubmit={onSubmit} className="flex flex-col items-center gap-12">
-        <div className="flex flex-col gap-6 tablet:flex-row">
+        <div className="flex flex-col flex-wrap gap-6 tablet:flex-row">
           {question.choices.map((choice, index) => (
             <div key={index}>
               <input
@@ -67,7 +67,7 @@ export const QuestionFormSection = ({ question, currentAnswerStatuses }: Questio
               <label
                 htmlFor={`${question.id}-${choice.id}`}
                 className={cn(
-                  'relative flex h-60 w-96 cursor-pointer flex-col items-center gap-4 overflow-hidden rounded-xl bg-mauve-3',
+                  'relative flex h-60 w-80 cursor-pointer flex-col items-center gap-4 overflow-hidden rounded-xl bg-mauve-3 tablet:w-96',
                   'peer-focus:ring-4 peer-focus:ring-purple-6/80',
                   'peer-checked:ring-4 peer-checked:ring-purple-6',
                   'peer-disabled:pointer-events-none',

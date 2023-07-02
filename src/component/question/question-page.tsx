@@ -27,7 +27,7 @@ export const QuestionPage = ({ question, hashedToken }: QuestionPageProps): Reac
   const isAnswered = currentAnswerStatuses.isCorrect !== null;
 
   return (
-    <section className="flex flex-col gap-12 px-5 py-12 laptop:px-60">
+    <section className="flex flex-col gap-12 px-5 py-12 laptop:px-48">
       <div className="flex flex-col gap-6">
         <hgroup className="flex flex-col items-center gap-2 text-mauve-12">
           <h1 className="text-3xl font-bold">問題 {question.id}</h1>
