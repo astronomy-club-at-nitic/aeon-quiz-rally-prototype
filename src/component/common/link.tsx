@@ -12,11 +12,15 @@ export const Link = <T,>({ children, ...props }: LinkProps<T>): ReactNode => {
     const { external, ...anchorProps } = props;
 
     return (
-      <a target="_blank" rel="noopener noreferrer" {...anchorProps}>
+      <a tabIndex={0} target="_blank" rel="noopener noreferrer" {...anchorProps}>
         {children}
       </a>
     );
   }
 
-  return <NextLink {...props}>{children}</NextLink>;
+  return (
+    <NextLink tabIndex={0} {...props}>
+      {children}
+    </NextLink>
+  );
 };

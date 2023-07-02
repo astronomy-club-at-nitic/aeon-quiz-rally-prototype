@@ -7,11 +7,11 @@ import { Link } from '@/component/common/link';
 import { Question } from '@/constant/question';
 import { useAnswerStatuses } from '@/state/answer-status.hook';
 
-type QuestionCardProps = {
+type QuestionCardLinkProps = {
   question: Question;
 };
 
-export const QuestionCard = ({ question }: QuestionCardProps): ReactNode => {
+export const QuestionCardLink = ({ question }: QuestionCardLinkProps): ReactNode => {
   const answerStatuses = useAnswerStatuses();
   const currentAnswerStatuses = answerStatuses.find((status) => status.questionId === question.id);
   if (currentAnswerStatuses === undefined) {

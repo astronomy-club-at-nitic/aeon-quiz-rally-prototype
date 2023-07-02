@@ -62,12 +62,13 @@ export const QuestionFormSection = ({ question, currentAnswerStatuses }: Questio
                 {...register('choice', {
                   required: true,
                 })}
-                className="peer hidden"
+                className="peer sr-only"
               />
               <label
                 htmlFor={`${question.id}-${choice.id}`}
                 className={cn(
                   'relative flex h-60 w-96 cursor-pointer flex-col items-center gap-4 overflow-hidden rounded-xl bg-mauve-3',
+                  'peer-focus:ring-4 peer-focus:ring-purple-6/80',
                   'peer-checked:ring-4 peer-checked:ring-purple-6',
                   'peer-disabled:pointer-events-none',
                 )}
