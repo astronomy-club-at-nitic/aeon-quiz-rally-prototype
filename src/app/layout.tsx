@@ -1,4 +1,3 @@
-import { Analytics } from '@vercel/analytics/react';
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import { Header } from '@/component/layout/header';
@@ -24,7 +23,6 @@ const RootLayout = ({ children }: RootLayoutProps): ReactNode => (
         'scrollbar-thin scrollbar-track-transparent scrollbar-thumb-mauve-6 scrollbar-thumb-rounded-full hover:scrollbar-thumb-mauve-7',
       )}
     >
-      <Analytics />
       <ThemeProvider attribute="data-theme" enableSystem defaultTheme="system">
         <Header className="fixed left-0 top-0 z-10 h-20" />
         <PageTransitionAnimationProvider>
