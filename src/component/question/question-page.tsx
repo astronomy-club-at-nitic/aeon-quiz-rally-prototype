@@ -10,6 +10,7 @@ import { Image } from '@/component/common/image';
 import { Question } from '@/constant/question';
 import { CameraIcon } from '@/icon/camera-icon';
 import { useAnswerStatuses } from '@/state/answer-status.hook';
+import { breakpoints } from '@/style/token';
 
 type QuestionPageProps = {
   question: Question;
@@ -37,6 +38,7 @@ export const QuestionPage = ({ question, hashedToken }: QuestionPageProps): Reac
           src={question.thumbnailSrc}
           width={384}
           height={240}
+          sizes={`${breakpoints.laptop} 384px, 50vw`}
           alt={question.thumbnailAlt ?? '問題をイメージした画像。'}
           placeholder="blur"
           className="mx-auto h-60 w-96 rounded-xl object-cover"

@@ -6,6 +6,7 @@ import { Image } from '@/component/common/image';
 import { Link } from '@/component/common/link';
 import { Question } from '@/constant/question';
 import { useAnswerStatuses } from '@/state/answer-status.hook';
+import { breakpoints } from '@/style/token';
 
 type QuestionCardLinkProps = {
   question: Question;
@@ -23,6 +24,7 @@ export const QuestionCardLink = ({ question }: QuestionCardLinkProps): ReactNode
       <Image
         src={question.thumbnailSrc}
         height={256}
+        sizes={`${breakpoints.laptop} 256px, 50vw`}
         alt={question.thumbnailAlt ?? '問題をイメージした画像。'}
         placeholder="blur"
         className="h-52 w-full object-cover tablet:h-64"
