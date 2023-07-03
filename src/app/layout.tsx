@@ -22,9 +22,9 @@ const RootLayout = ({ children }: RootLayoutProps): ReactNode => (
       )}
     >
       <ThemeProvider attribute="data-theme" enableSystem defaultTheme="system">
-        <Header className="fixed left-0 top-0 z-10 h-20" />
+        <Header className="sticky left-0 top-0 z-10 h-20" />
         <PageTransitionAnimationProvider>
-          <main className="mt-20 min-h-full grow">{children}</main>
+          <main>{children}</main>
         </PageTransitionAnimationProvider>
       </ThemeProvider>
     </body>
