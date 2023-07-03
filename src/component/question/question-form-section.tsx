@@ -78,6 +78,7 @@ export const QuestionFormSection = ({ question, currentAnswerStatuses }: Questio
                   alt={choice.thumbnailAlt ?? '選択肢をイメージした画像。'}
                   fill
                   sizes={`${breakpoints.tablet.mediaQuery} 100vw, 50vw`}
+                  placeholder="blur"
                   className="absolute object-cover"
                 />
                 <span className="absolute inset-0 flex h-full w-full items-end p-5">

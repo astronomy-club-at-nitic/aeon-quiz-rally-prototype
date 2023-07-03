@@ -24,6 +24,7 @@ export const QuestionCardLink = ({ question }: QuestionCardLinkProps): ReactNode
         src={question.thumbnailSrc}
         height={256}
         alt={question.thumbnailAlt ?? '問題をイメージした画像。'}
+        placeholder="blur"
         className="h-52 w-full object-cover tablet:h-64"
       />
       <div className="flex flex-col gap-1 p-8 pt-4 transition tablet:p-10 tablet:pt-6">

@@ -15,6 +15,7 @@ export const AccessMapSection = ({ question }: AccessMapSectionProps): ReactNode
       height={1024}
       sizes={`${breakpoints.laptop.mediaQuery} 1024px, 100vw`}
       alt={question.mapImageAlt ?? '問題に解答するための QR コードが設置されている場所を示した地図の画像。'}
+      placeholder="blur"
     />
   </section>
 );
