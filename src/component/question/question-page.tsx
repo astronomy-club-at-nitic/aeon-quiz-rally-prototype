@@ -40,6 +40,7 @@ export const QuestionPage = ({ question, hashedToken }: QuestionPageProps): Reac
           height={240}
           sizes={`${breakpoints.laptop} 384px, 50vw`}
           alt={question.thumbnailAlt ?? '問題をイメージした画像。'}
+          priority
           placeholder="blur"
           className="mx-auto h-60 w-96 rounded-xl object-cover"
         />
