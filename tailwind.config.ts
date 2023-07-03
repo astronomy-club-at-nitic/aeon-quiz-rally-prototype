@@ -11,7 +11,7 @@ const config: Config = {
   theme: {
     colors,
     fontFamily: {
-      sans: ['var(--font-noto-sans-jp)', ...defaultTheme.fontFamily.sans],
+      sans: defaultTheme.fontFamily.sans,
     },
     screens: {
       mobile: `${breakpoints.mobile.minWidth}px`,

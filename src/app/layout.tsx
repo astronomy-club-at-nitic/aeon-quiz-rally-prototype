@@ -3,7 +3,6 @@ import type { ReactNode } from 'react';
 import { Header } from '@/component/layout/header';
 import { PageTransitionAnimationProvider } from '@/component/layout/page-transition-animation-provider';
 import { ThemeProvider } from '@/component/layout/theme-provider';
-import { fontFamily } from '@/font/family';
 import { colors } from '@/style/token';
 import { getBaseUrl } from '@/util/get-base-url';
 import { cn } from '@/util/tailwind';
@@ -18,7 +17,6 @@ const RootLayout = ({ children }: RootLayoutProps): ReactNode => (
     <head />
     <body
       className={cn(
-        fontFamily,
         'bg-purple-1 font-sans',
         'scrollbar-thin scrollbar-track-transparent scrollbar-thumb-mauve-6 scrollbar-thumb-rounded-full hover:scrollbar-thumb-mauve-7',
       )}
