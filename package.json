@@ -4,10 +4,10 @@
     "node": ">=18.0.0 <19",
     "pnpm": ">=8.0.0 <9"
   },
-  "packageManager": "pnpm@8.6.6",
+  "packageManager": "pnpm@8.6.7",
   "volta": {
     "node": "18.16.1",
-    "pnpm": "8.6.6"
+    "pnpm": "8.6.7"
   },
   "scripts": {
     "prepare": "husky install",
@@ -38,7 +38,7 @@
     "react-icons": "4.10.1",
     "sharp": "0.32.1",
     "tailwind-merge": "1.13.2",
-    "tailwind-variants": "0.1.10"
+    "tailwind-variants": "0.1.11"
   },
   "devDependencies": {
     "@funboxteam/optimizt": "5.0.1",
