@@ -38,18 +38,18 @@
     "react-icons": "4.10.1",
     "sharp": "0.32.1",
     "tailwind-merge": "1.13.2",
-    "tailwind-variants": "0.1.11"
+    "tailwind-variants": "0.1.12"
   },
   "devDependencies": {
     "@funboxteam/optimizt": "5.0.1",
     "@tsconfig/next": "2.0.0",
     "@tsconfig/strictest": "2.0.1",
-    "@types/jest": "29.5.2",
+    "@types/jest": "29.5.3",
     "@types/node": "20.4.1",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
-    "@typescript-eslint/eslint-plugin": "5.61.0",
-    "@typescript-eslint/parser": "5.61.0",
+    "@typescript-eslint/eslint-plugin": "5.62.0",
+    "@typescript-eslint/parser": "5.62.0",
     "autoprefixer": "10.4.14",
     "dotenv": "16.3.1",
     "eslint": "8.44.0",
