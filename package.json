@@ -37,7 +37,7 @@
     "react-hook-form": "7.45.1",
     "react-icons": "4.10.1",
     "sharp": "0.32.3",
-    "tailwind-merge": "1.13.2",
+    "tailwind-merge": "1.14.0",
     "tailwind-variants": "0.1.13"
   },
   "devDependencies": {
@@ -52,7 +52,7 @@
     "@typescript-eslint/parser": "5.62.0",
     "autoprefixer": "10.4.14",
     "dotenv": "16.3.1",
-    "eslint": "8.44.0",
+    "eslint": "8.45.0",
     "eslint-config-airbnb-typescript": "17.1.0",
     "eslint-config-next": "13.4.10",
     "eslint-config-prettier": "8.8.0",
